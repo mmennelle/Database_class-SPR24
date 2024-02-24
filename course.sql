@@ -1,0 +1,15 @@
+INSERT INTO course VALUES('CSCI-1581','Software Design and Development I Laboratory');
+INSERT INTO course VALUES('CSCI-1621','Cybersecurity for All');
+INSERT INTO course VALUES('CSCI-2120','Software Design and Development II');
+INSERT INTO course VALUES('CSCI-2125','Data Structures');
+INSERT INTO course VALUES('CSCI-2450','Machine Structure and Assembly Language Programming');
+INSERT INTO course VALUES('CSCI-2467','Systems Programming Concepts');
+INSERT INTO course VALUES('CSCI-4125','Data Models and Database Systems');
+INSERT INTO course VALUES('CSCI-4208','Developing Advanced Web Applications');
+INSERT INTO course VALUES('CSCI-4401','Principles of Operating Systems I');
+INSERT INTO course VALUES('CSCI-4460','Network Operation and Defense');
+INSERT INTO course VALUES('CSCI-4501','Programming Language Structure');
+INSERT INTO course VALUES('CSCI-4621','Intro to Cyber Security');
+INSERT INTO course VALUES('CSCI-4661','Topics in Mobile Applications Development');
+INSERT INTO course VALUES('CSCI-4670','Fundamentals of Game Development');
+commit;
