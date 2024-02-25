@@ -9,22 +9,22 @@ DROP TABLE Course;
 
 
 CREATE TABLE Position2(
-    P_ID VARCHAR(100),
-    P_Name VARCHAR(100),
+    P_ID VARCHAR2(100),
+    P_Name VARCHAR2(100),
     P_Salary NUMBER,
     CONSTRAINT PK_Position PRIMARY KEY(P_ID)
 );
 
 CREATE TABLE Employee(
-    E_ID VARCHAR(100),
-    E_Name VARCHAR(100),
+    E_ID VARCHAR2(100),
+    E_Name VARCHAR2(100),
     E_Dob DATE,
-    PositionID VARCHAR(100),
+    PositionID VARCHAR2(100),
     CONSTRAINT PK_Employee PRIMARY KEY(E_ID),
     CONSTRAINT FK_Employee FOREIGN KEY(PositionID) REFERENCES Position2(P_ID)
 );
 CREATE TABLE Timecard(
-    T_EmpID VARCHAR(100),
+    T_EmpID VARCHAR2(100),
     T_Date DATE,
     T_Hours NUMBER,
     CONSTRAINT TimecardPK PRIMARY KEY (T_EmpID,T_Date),
@@ -32,21 +32,21 @@ CREATE TABLE Timecard(
 );
 
 CREATE TABLE Address(
-    A_E_ID VARCHAR(100),
-    A_E_Address VARCHAR(100),
+    A_E_ID VARCHAR2(100),
+    A_E_Address VARCHAR2(100),
     CONSTRAINT AddressPK PRIMARY KEY(A_E_ID,A_E_Address),
     CONSTRAINT AddressFK FOREIGN KEY(A_E_ID) REFERENCES Employee(E_ID)    
 );
 
 CREATE TABLE Course(
-    C_ID VARCHAR(100),
-    C_Name VARCHAR(100),
+    C_ID VARCHAR2(100),
+    C_Name VARCHAR2(100),
     CONSTRAINT CoursePK PRIMARY KEY(C_ID)
 );
 
 CREATE TABLE Enrollment(
-    Enroll_E_ID VARCHAR(100),
-    Enroll_C_ID VARCHAR(100),
+    Enroll_E_ID VARCHAR2(100),
+    Enroll_C_ID VARCHAR2(100),
     Enroll_Grade CHAR(100),
     CONSTRAINT EnrollPK PRIMARY KEY(Enroll_E_ID,Enroll_C_ID),
     CONSTRAINT EnrollFK FOREIGN KEY(Enroll_E_ID) REFERENCES Employee(E_ID),
@@ -54,16 +54,16 @@ CREATE TABLE Enrollment(
 );
 
 CREATE TABLE Requirement(
-    ReqC_ID VARCHAR(100),
-    ReqP_ID VARCHAR(100),
-    CONSTRAINT RequirementPK PRIMARY KEY(ReqC_ID,ReqP_ID),
-    CONSTRAINT ReqFK FOREIGN KEY(ReqP_ID) REFERENCES Position2(P_ID),
-    CONSTRAINT ReqtFK FOREIGN KEY(ReqC_ID) REFERENCES Course(C_ID)
+    ReqP_ID varchar2(100),
+    ReqC_ID VARCHAR2(100),
+    CONSTRAINT RequirementPK PRIMARY KEY(ReqP_ID,ReqC_ID),
+    CONSTRAINT ReqtFK FOREIGN KEY(ReqC_ID) REFERENCES Course(C_ID),
+    CONSTRAINT ReqFK FOREIGN KEY(ReqP_ID) REFERENCES Position2(P_ID)
 );
 
 CREATE TABLE Prereq(
-    Pre_C_ID VARCHAR(100),
-    Pre_ID VARCHAR(100),
+    Pre_C_ID VARCHAR2(100),
+    Pre_ID VARCHAR2(100),
     CONSTRAINT PrerequisitePK PRIMARY KEY(Pre_C_ID,Pre_ID),
     CONSTRAINT PrerequisiteFK FOREIGN KEY(Pre_C_ID) REFERENCES Course(C_ID),
     CONSTRAINT Prerequisite2FK FOREIGN KEY(Pre_ID) REFERENCES Course(C_ID) 
