@@ -29,15 +29,15 @@ public class MaxSalaryPosition {
 
             while ((line = posInput.readLine()) != null) {
                 String[] parts = line.split(",");
-                String positionName = parts[1].trim();
+                String posName = parts[1].trim();
                 double salary = Double.parseDouble(parts[2].trim());
 
                 if (salary > maxSalary) {
                     maxSalary = salary;
                     positions.clear();
-                    positions.add(positionName);
+                    positions.add(posName);
                 } else if (salary == maxSalary) {
-                    positions.add(positionName);
+                    positions.add(posName);
                 }
             }
         } catch (IOException e) {
