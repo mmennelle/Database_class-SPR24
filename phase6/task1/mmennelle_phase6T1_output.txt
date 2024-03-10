@@ -1,0 +1,118 @@
+
+1. Names of all employees with atleast one address.                                                  A_E_ADDRESS                                                                                         
+---------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------
+Margot Robbie                                                                                        1000 City Park                                                                                      
+Ryan Gosling                                                                                         301 Bourbon                                                                                         
+Dwayne Johnson                                                                                       6500 Magazine St                                                                                    
+Tom Hanks                                                                                            1200 City Park                                                                                      
+Tom Hanks                                                                                            800 Decatur St                                                                                      
+Idris Elba                                                                                           2000 Lakeshore Dr                                                                                   
+Idris Elba                                                                                           400 Poydras                                                                                         
+Idris Elba                                                                                           401 Bourbon                                                                                         
+Gal Gadot                                                                                            123 Royal                                                                                           
+Gal Gadot                                                                                            1300 City Park                                                                                      
+Gal Gadot                                                                                            456 Royal                                                                                           
+
+1. Names of all employees with atleast one address.                                                  A_E_ADDRESS                                                                                         
+---------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------
+Gal Gadot                                                                                            501 Bourbon                                                                                         
+Chris Evans                                                                                          1500 Sugar Bowl Dr                                                                                  
+Jamie Foxx                                                                                           701 N Rampart St                                                                                    
+Rami Malek                                                                                           201 Bourbon                                                                                         
+Rami Malek                                                                                           545 St Charles Ave                                                                                  
+Rami Malek                                                                                           600 Poydras                                                                                         
+Vin Diesel                                                                                           1000 Carrollton                                                                                     
+Adam Driver                                                                                          1111 Canal St                                                                                       
+Scarlett Johansson                                                                                   1200 Carrollton                                                                                     
+Miles Teller                                                                                         500 Poydras                                                                                         
+Salma Hayek                                                                                          101 Chartres                                                                                        
+
+1. Names of all employees with atleast one address.                                                  A_E_ADDRESS                                                                                         
+---------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------
+Russell Crowe                                                                                        1100 Carrollton                                                                                     
+Russell Crowe                                                                                        615 Pere Antoine Alley                                                                              
+Russell Crowe                                                                                        6801 Franklin Ave                                                                                   
+Ewan McGregor                                                                                        1 Collins Diboll Cir                                                                                
+Ewan McGregor                                                                                        101 Bourbon                                                                                         
+Ewan McGregor                                                                                        1751 Gentilly Blvd                                                                                  
+Ewan McGregor                                                                                        601 Bourbon                                                                                         
+Beyonce                                                                                              1501 Dave Dixon Dr                                                                                  
+Brad Pitt                                                                                            1 Canal St                                                                                          
+Brad Pitt                                                                                            1380 Port of New Orleans                                                                            
+Matt Damon                                                                                           945 Magazine St                                                                                     
+
+33 rows selected. 
+
+
+2. Total hours per Employee ID.                                                                      Total hours worked
+---------------------------------------------------------------------------------------------------- ------------------
+E001                                                                                                             138.37
+E002                                                                                                             161.73
+E003                                                                                                              131.9
+E004                                                                                                             133.85
+E005                                                                                                             128.39
+E006                                                                                                             130.83
+E007                                                                                                             136.48
+E008                                                                                                             138.16
+E009                                                                                                             133.79
+E010                                                                                                             133.62
+E011                                                                                                             124.36
+
+2. Total hours per Employee ID.                                                                      Total hours worked
+---------------------------------------------------------------------------------------------------- ------------------
+E012                                                                                                             121.41
+E013                                                                                                             127.61
+E014                                                                                                             139.58
+E015                                                                                                             130.11
+E016                                                                                                             130.44
+E017                                                                                                             136.45
+E018                                                                                                             147.81
+E019                                                                                                             135.23
+E020                                                                                                             145.94
+E021                                                                                                             161.61
+E022                                                                                                             134.71
+
+2. Total hours per Employee ID.                                                                      Total hours worked
+---------------------------------------------------------------------------------------------------- ------------------
+E023                                                                                                             130.58
+E024                                                                                                             142.17
+E025                                                                                                             136.48
+E026                                                                                                             128.72
+E027                                                                                                             145.15
+E028                                                                                                             131.69
+E029                                                                                                             143.24
+E030                                                                                                             134.42
+
+30 rows selected. 
+
+
+3. names of all employees with no address.                                                          
+----------------------------------------------------------------------------------------------------
+Mark Wahlberg
+Tom Hardy
+Jackie Chan
+Lady Gaga
+Will Ferrell
+Natalie Portman
+Keanu Reeves
+Nicholas Cage
+Will Smith
+Harrison Ford
+Emma Stone
+
+11 rows selected. 
+
+
+4. Employess with Security Analyst position.                                                         P_NAME                                                                                              
+---------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------
+Ryan Gosling                                                                                         Security Analyst                                                                                    
+Idris Elba                                                                                           Security Analyst                                                                                    
+Gal Gadot                                                                                            Security Analyst                                                                                    
+Chris Evans                                                                                          Security Analyst                                                                                    
+Rami Malek                                                                                           Security Analyst                                                                                    
+Ewan McGregor                                                                                        Security Analyst                                                                                    
+Jackie Chan                                                                                          Security Analyst                                                                                    
+Keanu Reeves                                                                                         Security Analyst                                                                                    
+
+8 rows selected. 
+
