@@ -1,0 +1,78 @@
+
+1. Retrieve the names of all positions held by more than 5 employess                                
+----------------------------------------------------------------------------------------------------
+Security Analyst
+Web Developer
+
+
+2. Retrieve the names of all courses that have 'Data Structures' as a prerequisite.                 
+----------------------------------------------------------------------------------------------------
+Data Models and Database Systems
+Principles of Operating Systems I
+
+
+3. Find the employee names that have the highest paying position.                                   
+----------------------------------------------------------------------------------------------------
+Will Ferrell
+Salma Hayek
+Natalie Portman
+
+
+4. Find the total number of hours worked for each position name.                                     TOTAL_HOURS
+---------------------------------------------------------------------------------------------------- -----------
+Web Developer                                                                                             835.46
+Security Analyst                                                                                         1090.55
+Software Developer                                                                                        688.85
+Game Developer                                                                                             523.4
+Project Manager                                                                                           410.32
+Mobile App Developer                                                                                      546.25
+
+6 rows selected. 
+
+
+5. List the total number of A's and B's for each course name.                                        TOTAL_GRADES
+---------------------------------------------------------------------------------------------------- ------------
+Cybersecurity for All                                                                                          22
+Software Design and Development II                                                                             19
+Software Design and Development I Laboratory                                                                   19
+Data Structures                                                                                                18
+Machine Structure and Assembly Language Programming                                                            14
+Systems Programming Concepts                                                                                   14
+Network Operation and Defense                                                                                  11
+Programming Language Structure                                                                                 10
+Principles of Operating Systems I                                                                               8
+Intro to Cyber Security                                                                                         8
+Developing Advanced Web Applications                                                                            7
+
+5. List the total number of A's and B's for each course name.                                        TOTAL_GRADES
+---------------------------------------------------------------------------------------------------- ------------
+Data Models and Database Systems                                                                                7
+Fundamentals of Game Development                                                                                7
+Topics in Mobile Applications Development                                                                       5
+
+14 rows selected. 
+
+
+6. Find the course name(s) that is/are the most common requirement for positions.                    COUNT(PR.REQP_ID)
+---------------------------------------------------------------------------------------------------- -----------------
+Network Operation and Defense                                                                                        2
+Intro to Cyber Security                                                                                              2
+Principles of Operating Systems I                                                                                    1
+Fundamentals of Game Development                                                                                     1
+Programming Language Structure                                                                                       1
+Topics in Mobile Applications Development                                                                            1
+Developing Advanced Web Applications                                                                                 1
+Data Models and Database Systems                                                                                     1
+
+8 rows selected. 
+
+
+7. Find the employee name who worked the most hours between March 10th and 19th (inclusive)          TOTAL_HOURS
+---------------------------------------------------------------------------------------------------- -----------
+Margot Robbie                                                                                              61.13
+
+
+8. Find all employee names where both the first name and last name begin with a vowel               
+----------------------------------------------------------------------------------------------------
+Idris Elba
+
