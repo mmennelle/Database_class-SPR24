@@ -1,0 +1,66 @@
+
+E_ID                                                                                                 E_NAME                                                                                               TOTALHOURSWORKED
+---------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------- ----------------
+E001                                                                                                 Will Smith                                                                                                     138.37
+E002                                                                                                 Margot Robbie                                                                                                  159.01
+E003                                                                                                 Ryan Gosling                                                                                                    131.9
+E004                                                                                                 Dwayne Johnson                                                                                                 133.85
+E005                                                                                                 Emma Stone                                                                                                     128.39
+E006                                                                                                 Tom Hanks                                                                                                      130.83
+E007                                                                                                 Idris Elba                                                                                                     136.48
+E008                                                                                                 Gal Gadot                                                                                                      138.16
+E009                                                                                                 Will Ferrell                                                                                                   133.79
+E010                                                                                                 Chris Evans                                                                                                    133.62
+E011                                                                                                 Jamie Foxx                                                                                                     124.36
+
+E_ID                                                                                                 E_NAME                                                                                               TOTALHOURSWORKED
+---------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------- ----------------
+E012                                                                                                 Tom Hardy                                                                                                      121.41
+E013                                                                                                 Rami Malek                                                                                                     127.61
+E014                                                                                                 Vin Diesel                                                                                                     139.58
+E015                                                                                                 Adam Driver                                                                                                    130.11
+E016                                                                                                 Scarlett Johansson                                                                                             130.44
+E017                                                                                                 Miles Teller                                                                                                   136.45
+E018                                                                                                 Salma Hayek                                                                                                    147.81
+E019                                                                                                 Russell Crowe                                                                                                  135.23
+E020                                                                                                 Ewan McGregor                                                                                                  145.94
+E021                                                                                                 Lady Gaga                                                                                                       154.8
+E022                                                                                                 Beyonce                                                                                                        134.71
+
+E_ID                                                                                                 E_NAME                                                                                               TOTALHOURSWORKED
+---------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------- ----------------
+E023                                                                                                 Harrison Ford                                                                                                  130.58
+E024                                                                                                 Nicholas Cage                                                                                                  142.17
+E025                                                                                                 Brad Pitt                                                                                                      136.48
+E026                                                                                                 Natalie Portman                                                                                                128.72
+E027                                                                                                 Jackie Chan                                                                                                    145.15
+E028                                                                                                 Keanu Reeves                                                                                                   131.69
+E029                                                                                                 Matt Damon                                                                                                     143.24
+E030                                                                                                 Mark Wahlberg                                                                                                  134.42
+
+30 rows selected. 
+
+
+  COUNT(*)
+----------
+       898
+
+
+Error starting at line : 874 in command -
+INSERT INTO timecard VALUES('E002','30-MAR-24',6.94)
+Error at Command Line : 874 Column : 13
+Error report -
+SQL Error: ORA-20200: Employee NUME002Has exceeded hour limit.
+ORA-06512: at "MPMENNEL.UPDATEDHOURS", line 12
+ORA-04088: error during execution of trigger 'MPMENNEL.UPDATEDHOURS'
+
+
+Error starting at line : 863 in command -
+INSERT INTO timecard VALUES('E021','29-MAR-24',6.81)
+Error at Command Line : 863 Column : 13
+Error report -
+SQL Error: ORA-20200: Employee NUME021Has exceeded hour limit.
+ORA-06512: at "MPMENNEL.UPDATEDHOURS", line 12
+ORA-04088: error during execution of trigger 'MPMENNEL.UPDATEDHOURS'
+
+
