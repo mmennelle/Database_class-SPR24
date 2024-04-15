@@ -2,13 +2,14 @@ CREATE OR REPLACE PROCEDURE ReportCard(employee_id IN VARCHAR2) IS
     employee_name VARCHAR2(100);
     course_code VARCHAR2(20);
     course_title VARCHAR2(100);
-    received_grade CHAR(100); -- had to set this to 100 because the table was created with 100byte space for this field.
+    received_grade CHAR(100); -- Could not figure out why Char(1) wouldnt work. until I relealized that
+                              --because the table was created with 100-byte space for this field I had to alot the same amount of space here. Small revalations!
     grade_points NUMBER;
     total_grade_points NUMBER := 0;
     course_counter NUMBER := 0;
     calculated_gpa FLOAT;
 
-    CURSOR course_details_cursor IS
+    CURSOR c_details IS
         SELECT c.c_id, c.c_name, e.enroll_grade
         FROM course c, enrollment e
         WHERE c.c_id = e.enroll_c_id
@@ -21,12 +22,12 @@ BEGIN
     FROM employee
     WHERE e_id = employee_id;
 
-    OPEN course_details_cursor;
-    FETCH course_details_cursor INTO course_code, course_title, received_grade;
+    OPEN c_details;
+    FETCH c_details INTO course_code, course_title, received_grade;
     received_grade := TRIM(received_grade);
-    IF course_details_cursor%NOTFOUND THEN
+    IF c_details%NOTFOUND THEN
         DBMS_OUTPUT.PUT_LINE('No report card to generate!');
-        CLOSE course_details_cursor;
+        CLOSE c_details;
         RETURN;
     ELSE
         DBMS_OUTPUT.PUT_LINE('Report Card for ' || employee_id || ': ' || employee_name);
@@ -35,7 +36,7 @@ BEGIN
     END IF;
 
     LOOP
-        EXIT WHEN course_details_cursor%NOTFOUND;
+        EXIT WHEN c_details%NOTFOUND;
         DBMS_OUTPUT.PUT_LINE(RPAD(course_code, 12) || RPAD(course_title, 50) || received_grade);
         grade_points := CASE received_grade
                             WHEN 'A' THEN 4
@@ -46,9 +47,9 @@ BEGIN
                         END;
         total_grade_points := total_grade_points + grade_points;
         course_counter := course_counter + 1;
-        FETCH course_details_cursor INTO course_code, course_title, received_grade;
+        FETCH c_details INTO course_code, course_title, received_grade;
     END LOOP;
-    CLOSE course_details_cursor;
+    CLOSE c_details;
 
 
     IF course_counter > 0 THEN
