@@ -15,7 +15,7 @@ BEGIN
 
     IF Total_hours + :NEW.t_hours > Max_Hours THEN
 
-        RAISE_APPLICATION_ERROR(-20200, 'Employee NUM' || :NEW.t_empid || 'Has exceeded hour limit.');
+        RAISE_APPLICATION_ERROR(-20001, 'Employee NUM' || :NEW.t_empid || 'Has exceeded hour limit.');
     ELSE
         UPDATE Employee
         SET TotalHoursWorked = Total_Hours + :NEW.t_hours
@@ -23,7 +23,7 @@ BEGIN
     END IF;
     EXCEPTION
     WHEN NO_DATA_FOUND THEN
-        RAISE_APPLICATION_ERROR(-20201, 'No such employee exists with ID #' || :NEW.t_empid);
+        RAISE_APPLICATION_ERROR(-20002, 'No such employee exists with ID #' || :NEW.t_empid);
 END UpdatedHours;
 /
 
@@ -35,12 +35,12 @@ UPDATE Employee SET TotalHoursWorked = 0;
 INSERT INTO Timecard VALUES('E002', '30-MAR-24', 6.94);
 INSERT INTO Timecard VALUES('E021', '30-MAR-24', 4.36);
 
---total hourse check
+--total hours check
 SELECT E_ID, E_Name, TotalHoursWorked FROM Employee ORDER BY E_ID;
 
 --Timecard count
 SELECT COUNT(*) FROM Timecard;
 
-SHOW ERRORS TRIGGER MPMENNEL.UPDATEDHOURS;
+--SHOW ERRORS TRIGGER MPMENNEL.UPDATEDHOURS;
 
 
