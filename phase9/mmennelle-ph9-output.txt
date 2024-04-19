@@ -1,0 +1,34 @@
+
+What is the employee number? E111
+No report card to generate!
+
+What is the employee number? E003
+Report Card for E003: Ryan Gosling
+CourseID     Course Name                                        Grade
+------------------------------------------------------------------------
+CSCI-1581 Software Design and Development I Laboratory        A
+CSCI-1621 Cybersecurity for All                               A
+CSCI-2120 Software Design and Development II                  B
+CSCI-2125 Data Structures                                     A
+CSCI-2450 Machine Structure and Assembly Language Programming  C
+CSCI-2467 Systems Programming Concepts                        A
+CSCI-4401 Principles of Operating Systems I                   A
+CSCI-4501 Programming Language Structure                      A
+CSCI-4621 Intro to Cyber Security                             B
+CSCI-4670 Fundamentals of Game Development                    C
+Total GPA: 3.40
+
+What is the employee number? E020
+Report Card for E020: Ewan McGregor
+CourseID     Course Name                                        Grade
+------------------------------------------------------------------------
+CSCI-1581 Software Design and Development I Laboratory        B
+CSCI-1621 Cybersecurity for All                               A
+CSCI-2120 Software Design and Development II                  A
+CSCI-2125 Data Structures                                     D
+CSCI-2450 Machine Structure and Assembly Language Programming  B
+CSCI-2467 Systems Programming Concepts                        A
+CSCI-4501 Programming Language Structure                      B
+CSCI-4661 Topics in Mobile Applications Development           A
+Total GPA: 3.25
+
