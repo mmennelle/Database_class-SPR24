@@ -11,8 +11,8 @@ public class mmennellephase9 {
 
         //DB Connection
         String url = "jdbc:oracle:thin:@localhost:1521:Oracle21c"; 
-        String user = "********";
-        String password = "************";
+        String user = System.getenv("DB_USERNAME"); 
+        String password = System.getenv("DB_PASSWORD");   
 
         try (Connection conn = DriverManager.getConnection(url, user, password)) {
             //employee name
