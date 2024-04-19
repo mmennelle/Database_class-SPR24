@@ -50,7 +50,7 @@ Error starting at line : 874 in command -
 INSERT INTO timecard VALUES('E002','30-MAR-24',6.94)
 Error at Command Line : 874 Column : 13
 Error report -
-SQL Error: ORA-20200: Employee NUME002Has exceeded hour limit.
+SQL Error: ORA-20001: Employee NUME002Has exceeded hour limit.
 ORA-06512: at "MPMENNEL.UPDATEDHOURS", line 12
 ORA-04088: error during execution of trigger 'MPMENNEL.UPDATEDHOURS'
 
@@ -59,7 +59,7 @@ Error starting at line : 863 in command -
 INSERT INTO timecard VALUES('E021','29-MAR-24',6.81)
 Error at Command Line : 863 Column : 13
 Error report -
-SQL Error: ORA-20200: Employee NUME021Has exceeded hour limit.
+SQL Error: ORA-20001: Employee NUME021Has exceeded hour limit.
 ORA-06512: at "MPMENNEL.UPDATEDHOURS", line 12
 ORA-04088: error during execution of trigger 'MPMENNEL.UPDATEDHOURS'
 
